@@ -5,6 +5,7 @@ public class ReturnWordCount {
      * @return return the amount of words in a string.
      */
     public int count(String in){
-        return 0;
+        int availableWordCount = in.replaceAll("[^ ]", "").length(); //returns the count of available whitespaces
+        return availableWordCount += 1; // adding 1 because last word does not have a space at the end.
     }
 }
